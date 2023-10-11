@@ -265,6 +265,28 @@ form .button:hover {
     height: 100%; 
 }
 
+/*---------------- GetButton.io widget ----------------*/
+/*Put this code above to your index or where you want it and it should work with a style tag. (It is for a little popup in the corner - call to action: chat, email osv) --*/
+
+<script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+4746415105", // WhatsApp number
+            email: "the.penguin.site@hotmail.com", // Email
+            call_to_action: "Message us", // Call to action
+            button_color: "#666666", // Color of button
+            position: "right", // Position may be 'right' or 'left'
+            order: "email,whatsapp", // Order of buttons
+            pre_filled_message: "Hey, I'm messaging from your website..", // WhatsApp pre-filled message
+        };
+        var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+<!-- /GetButton.io widget -->
+
 
 /*---------------- Media query styles ----------------*/
 /* MD media query (64em / 1024px) */
