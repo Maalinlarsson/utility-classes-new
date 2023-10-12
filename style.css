@@ -70,6 +70,7 @@ html { scroll-behavior: smooth; }
 .tall-100               { min-height: 100vh;                 }
 
 .bg-light               { background-color: lightgray;     }
+.bg-very-light          { backgrounc-dolor: white;         }
 .bg-dark                { background-color: grey;          }
 .bg-featured            { background-color: #FFBE00;       }
 
@@ -97,8 +98,8 @@ html { scroll-behavior: smooth; }
 .uppercase              { text-transform: uppercase;         }
 
 .capped-width-wide      { max-width: 1600px; margin: auto;   }
-.capped-width           { max-width: 1000px; margin: auto;   }
-.capped-width-narrow    { max-width: 900px;  margin: auto;   }
+.capped-width           { max-width: 1200px; margin: auto;   }
+.capped-width-narrow    { max-width: 1000px;  margin: auto;  }
 .capped-width-v-narrow  { max-width: 800px;  margin: auto;   }
 
 .flex-flip-alternate:nth-child(even) {
