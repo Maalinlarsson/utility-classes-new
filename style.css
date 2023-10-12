@@ -154,6 +154,24 @@ p:last-child {
     background-position: center;
 }
 
+.bg-overlay {
+    position: relative;
+}
+
+.bg-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.bg-overlay-gradiant::before { 
+    background: linear-gradiant(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0));
+}
+
 
 /*---------------- Contact form ----------------*/
 form input,
